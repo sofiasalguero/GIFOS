@@ -1,0 +1,149 @@
+@media screen and (min-width:1080px){
+
+    body{
+        .inicio{
+            width: 100%;
+        }
+        header{
+
+            figure{
+                margin-left:14%;
+                img{
+                height: 59.1px;
+                }   
+            }    
+
+            nav{
+                    width: 100%;
+                    margin-left: 30%;
+                    display: inline-flex;
+                    .menu{
+                        margin-right: 0;
+    
+                        span{
+                           display: none;
+                        }
+                        input{
+                            display: none;
+                        }
+    
+                        ul{
+                            display: flex; 
+                            position: unset;
+                            background: none;
+                            width:400px;
+                            
+                            
+    
+                            li{
+                                margin: 0;
+                                width: 130px; 
+                               
+                                
+                            
+                                
+                                a{ 
+                                    font-family: 'Montserrat';
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    color: #572EE5;
+                                    letter-spacing: 0;
+                                    text-align: center;  
+                                    
+                                }  
+                            }
+                        }        
+                    }
+                    button{
+                        display: inline-block;
+                        background-color: white;
+                        margin-right:175px;
+                        border:#572EE5 solid 1px;
+                        border-radius: 50%;
+                        padding: 2%;
+                    }                                  
+                }                    
+        }       
+        
+        main{
+            section{
+
+                h1{
+                    width: 600px;
+                    font-size: 35px;
+                    margin-left: 25%;
+                    margin-top: 76px;
+                }
+            }
+
+            section{
+
+                figure{
+
+                    img{
+                        width: 24rem;
+                        margin-left: 34%
+                    }
+                }
+            }
+
+            section{
+                input{
+                    width: 35rem;
+                    margin-left: 27%;
+                }
+
+                .buscador{
+                    margin-left: 51em;
+                }
+            }
+
+            .reactions{
+                 
+                h2{
+                    font-size: 18px;
+                    margin-top: 4em;
+                }
+
+                p{
+                    font-size: 16px;
+                    width: 402px;  
+                    margin-left: 20em;
+                }
+            }
+        }
+
+        footer{
+
+
+            .compartir{
+                margin: 0;
+                p{
+                    display: inline-block;
+                    margin-left: 156px;
+                    margin-right: 17px;
+                    font-size: 13px;
+                }
+
+                div{
+                    display: inline-block;
+
+                    i{
+                        &:hover {
+                            color:#572EE5;
+                        }
+                    }
+                }
+
+                .derechos{
+                  float: right;
+                  margin-right: 158px;
+                  font-size: 13px;
+                 }
+            }
+        
+        }
+
+
+    }
+}
