@@ -91,7 +91,9 @@ body {
                     opacity:90%;
                     background:$color-principal;
                     display: none;
-
+                    min-height: 100%;
+                    z-index: 1;
+                   
                     li {
                         display: block;
                         width: 100%;
@@ -108,6 +110,14 @@ body {
                             text-align: center;
                         }
 
+                    }
+
+                    .lineasMenu{
+                        background-color: $background-primario;
+                        opacity: 50%;
+                        width: 10%;
+                        margin-left: 45%;
+                        top: -8px;
                     }
                 }
 
