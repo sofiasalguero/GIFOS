@@ -7,10 +7,10 @@ function getUsers() {
     });
 }
 
-function searchGiphys(text, limit = 20) {
+function searchGiphys(text, action, limit = 20) {
     const url = giphyApiUrl + 'search' + '?api_key=' + giphyApiKey + '&q=' + text + '&limit=' + limit;
     getData(url, (response) => {
-        return response.data;
+        action(response.data);
     });
 }
 

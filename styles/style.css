@@ -143,6 +143,14 @@ body {
     width: 50%;
     margin-left: 25vw;
     margin-top: 2px; }
+  body main .resultadoBuscador h1 {
+    text-transform: uppercase; }
+  body main .resultadoBuscador ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; }
+    body main .resultadoBuscador ul li {
+      padding: 4%; }
   body main .trending {
     background-color: #F3F5F8;
     margin-top: 45px;

@@ -64,7 +64,7 @@
         </section>
 
         <section>
-        <input type="text" placeholder="Busca GIFOS y más">
+        <input id="search-input" type="search" onkeydown="search()" placeholder="Busca GIFOS y más">
         <img src="./images/icon-search.svg" alt="Buscar" class="buscador">
         </section>
 
@@ -75,6 +75,10 @@
             <p>
                 Reactions, Entertainment, Sports, Stickers, Artists 
             </p>
+        </section>
+        <section class="resultadoBuscador">
+            <h1 id="search-results-title"></h1>
+            <ul id="search-results"></ul>
         </section>
 
         <section class="trending">
@@ -141,6 +145,7 @@
     </section>
     <script src="utils.js"></script>
     <script src="giphy.js"></script>
+    <script src="search-giphy.js"></script>
     <script src="trending-giphy.js"></script>
     <script src="index.js"></script>
 </body>
