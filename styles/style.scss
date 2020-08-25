@@ -13,6 +13,9 @@
 }
 body {
     margin-top: 0;
+    &.dark{
+        background-color: $background-dark;
+    };
 
     header {
         display: flex;
@@ -26,7 +29,7 @@ body {
         }
 
         nav {
-
+            
             .menu {
                 padding-top: 3px;
 
@@ -188,8 +191,8 @@ body {
                 color: $color-principal;
                 text-align: center;
                 line-height: 25px; 
-                width: 225px;
-                margin-left:20%;
+                width: 50%;
+                margin-left: 25vw;
                 margin-top: 2px;
             }
         }
@@ -197,7 +200,7 @@ body {
         .trending{
             background-color:$background-secundario ;
             margin-top: 45px;
-            height: 430px; //establezco tamñano para despues integrar js
+            height: 100%;
 
             h2{
                 font-family: $fuente-primaria;
@@ -217,6 +220,43 @@ body {
                 margin-top: 7px;
                 margin-bottom:32px;
                 
+            }
+            figure{
+
+                ul{
+                list-style-type: none;
+                display: flex;
+                   
+               
+                li{
+                    display: flex;
+                    height: 35vh;
+
+                    .left{
+                            margin-left: 2px;
+                            color: $color-principal;
+                            background-color:$background-secundario;
+                            
+                        }
+                    .right{
+                            color: $color-principal;
+                            background-color:$background-secundario;
+                        }
+                    
+
+                        img{
+                            height: 30vh;
+                            width: 70vw;
+                            padding: 1vh;
+                            margin-bottom: 82px;
+                            
+                        }
+                    }
+                }
+
+                #trending-list{
+                    width: 100%;
+                }
             }
 
             

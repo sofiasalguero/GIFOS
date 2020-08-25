@@ -108,7 +108,29 @@
                 p{
                     font-size: 16px;
                     width: 402px;  
-                    margin-left: 20em;
+                    margin-left: 32vw;
+                }
+            }
+
+            .trending{
+
+             figure{
+ 
+                ul{
+                    display: flex;
+                    li{
+
+                        img{
+                            margin-bottom: 182px;
+                            padding: 1vh;
+                            height: 25vh;
+                            width: 25vw;
+                        }
+                    }
+                    #trending-list{
+                        width: 100%;
+                    }
+                }
                 }
             }
         }
