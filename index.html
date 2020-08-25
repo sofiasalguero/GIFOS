@@ -88,7 +88,7 @@
             <figure>
                 <ul>
                     <li>
-                            <button class="left">
+                            <button class="left" id="load-less-btn" onclick="loadTrendingGiphys(-1)">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                             </button>
                     
@@ -96,7 +96,7 @@
                     <li id="trending-list"></li>
                     <li>
                         
-                            <button class="right">
+                            <button class="right" id="load-more-btn" onclick="loadTrendingGiphys(1)">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </button>
                     
@@ -106,8 +106,6 @@
                 
             </figure>
         </section>
-
-       
 
     </main>
     <footer>
@@ -141,6 +139,7 @@
     <section class="inicio">
 
     </section>
+    <script src="utils.js"></script>
     <script src="giphy.js"></script>
     <script src="trending-giphy.js"></script>
     <script src="index.js"></script>

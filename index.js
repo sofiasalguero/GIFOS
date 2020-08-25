@@ -18,7 +18,3 @@ function afterSwitchModeChanged() {
         classList.remove('dark');
     }
 }
-
-function setHtml(htmlElement, content) {
-    htmlElement.innerHTML = content;
-}

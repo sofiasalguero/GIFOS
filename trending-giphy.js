@@ -1,11 +1,21 @@
+const loadLessBtn = document.getElementById('load-less-btn');
 const trendingList = document.getElementById('trending-list');
-let pageSize = getPageSize();
+const pageSize = getPageSize();
 let offset = 0;
+let canGoBack = false;
 
-loadTrendingGiphys();
+// OnInit
+loadTrendingGiphys(0);
+//
 
-function loadTrendingGiphys() {
-    var trendingHtml = trendingList.innerHTML;
+function loadTrendingGiphys(multiplier) {
+    if (!canGoBack && multiplier < 0) {
+        return;
+    }
+
+    var trendingHtml = '';
+    offset = offset + (pageSize * multiplier);
+
     trendingGiphys((gifs) => {
         gifs.forEach(gif => {
             const img = gif.images.original;
@@ -13,11 +23,9 @@ function loadTrendingGiphys() {
         })
         setHtml(trendingList, trendingHtml);
     }, pageSize, offset);
-    offset += pageSize;
-}
 
-function setHtml(htmlElement, content) {
-    htmlElement.innerHTML = content;
+    canGoBack = offset >= pageSize;
+    loadLessBtn.disabled = !canGoBack;
 }
 
 function getPageSize() {
