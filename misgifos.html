@@ -3,83 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIFOS</title>
+    <title>Favoritos</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/favoritos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
+</html>
 <body>
     <section class="inicio">
 
     </section>
-    <header>
-        <figure class="logo">
-           <a href="index.html"><img src="./images/logo-mobile.svg" alt="logo"></a> 
-        </figure>
-        <nav>
-            <div class="menu">
-                <input type="checkbox" id="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul>
-                    <li>
-                        <a href="#" onclick="switchClick()" id="switch"> Modo Nocturno</a>
-                    </li>
-                    <span class="lineasMenu">
+        <header>
+                <figure class="logo">
+                    <a href="index.html"><img src="./images/logo-mobile.svg" alt="logo"></a>
+                </figure>
+                <nav>
+                    <div class="menu">
+                        <input type="checkbox" id="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul>
+                            <li>
+                                <a href="#" onclick="switchMode()" id="switch"> Modo Nocturno</a>
+                            </li>
+                            <li>
+                                <a href="favoritos.html">Favoritos</a>
+                            </li>
+                            <li>
+                                <a href="misgifos.html">Mis GIFOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button>
+                        <img src="./images/button-crear-gifo.svg" alt="crear-gifo">
+                    </button>
+                </nav>
+        </header>
+            <main>
+                <img src="./images/icon-mis-gifos.svg" alt="Mis GIFOS">
+                <h2>Mis GIFOS</h2>
+       
 
-                    </span>
-                    <li>
-                        <a href="favoritos.html">Favoritos</a>
-                    </li>
-                    <span class="lineasMenu">
+                     <div>
+                         <img src="" alt="">
+                         <img src="" alt="">
+                         <img src="" alt="">
+                         <img src="" alt="">
+                     </div>
 
-                    </span>
-                    <li>
-                        <a href="misgifos.html">Mis GIFOS</a>
-                    </li>
-                    <span class="lineasMenu">
-
-                    </span>
-                </ul>
-            </div>
-            <button>
-                <img src="./images/button-crear-gifo.svg" alt="crear-gifo">
-            </button>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>
-                Inspírate, busca, guarda, y crea los mejores <span class="gifos">GIFOS</span>  
-            </h1>
-        </section>
-        <section>
-            <figure>
-            <img src="./images/ilustra_header.svg" alt="buscador">
-            </figure>
-        </section>
-
-        <section>
-        <input id="search-input" type="search" onkeydown="search()" placeholder="Busca GIFOS y más">
-        <img src="./images/icon-search.svg" alt="Buscar" class="buscador">
-        </section>
-
-        <section class="reactions">
-            <h2>
-                Trending:
-            </h2>
-            <p>
-                Reactions, Entertainment, Sports, Stickers, Artists 
-            </p>
-        </section>
-        <section class="resultadoBuscador">
-            <h1 id="search-results-title"></h1>
-            <ul id="search-results"></ul>
-        </section>
+                <section class="vermas">
+                    <button>
+                        ver más 
+                    </button>
+                </section>
 
         <section class="trending">
 
@@ -110,8 +91,8 @@
                 
             </figure>
         </section>
-
     </main>
+
     <footer>
         <section class="compartir">
             <p>Compartir en:</p>
@@ -140,13 +121,11 @@
 
 
     </footer>
-    <section class="inicio">
 
-    </section>
     <script src="utils.js"></script>
     <script src="giphy.js"></script>
-    <script src="search-giphy.js"></script>
     <script src="trending-giphy.js"></script>
-    <script src="index.js"></script>
+
+
+    
 </body>
-</html>
