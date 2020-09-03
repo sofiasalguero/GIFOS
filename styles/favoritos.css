@@ -3,149 +3,28 @@
 /*Colores*/
 /*Fuentes*/
 /*Dark Mode */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
-
-.inicio {
-  background-color: #572EE5;
-  height: 5px;
-  margin-top: 0; }
-
-body {
-  margin-top: 0; }
-  body.dark {
-    background-color: #37383C; }
-  body header {
-    display: flex;
-    justify-content: space-between;
-    height: 95px;
-    align-items: center;
-    background-color: white; }
-    body header figure {
-      margin-left: 22px; }
-    body header nav .menu {
-      padding-top: 3px; }
-      body header nav .menu input {
-        display: block;
-        width: 20px;
-        height: 20px;
-        opacity: 0;
-        z-index: 2;
-        position: absolute;
-        margin-right: 12px;
-        /*movimiento a cruz*/ }
-        body header nav .menu input[type="checkbox"]:checked ~ ul {
-          display: block;
-          height: 224px;
-          padding-top: 16px;
-          padding-left: 16px; }
-        body header nav .menu input:checked ~ span {
-          opacity: 1;
-          transform: rotate(45deg) translate(2px, 1px); }
-        body header nav .menu input:checked ~ span:nth-last-child(3) {
-          opacity: 0;
-          transform: rotate(0deg) scale(0.2, 0.2); }
-        body header nav .menu input:checked ~ span:nth-last-child(2) {
-          transform: rotate(-45deg) translate(1px, 0px); }
-      body header nav .menu span {
-        display: block;
-        width: 15px;
-        height: 1px;
-        margin-bottom: 4px;
-        margin-right: 26px;
-        position: relative;
-        background: #572EE5;
-        z-index: 1;
-        transform-origin: 3px 0px;
-        transition: all 0.50s ease;
-        margin-right: 26px; }
-        body header nav .menu span:first-child {
-          transform-origin: 0% 0%; }
-        body header nav .menu span:nth-last-child(2) {
-          transform-origin: 0% 100%; }
-      body header nav .menu ul {
-        position: absolute;
-        top: 100px;
-        left: 0;
-        width: 100%;
-        opacity: 90%;
-        background: #572EE5;
-        display: none;
-        min-height: 100%;
-        z-index: 1; }
-        body header nav .menu ul li {
-          display: block;
-          width: 100%;
-          margin-bottom: 24px; }
-          body header nav .menu ul li a {
-            display: block;
-            width: 100%;
-            color: white;
-            line-height: 30px;
-            text-decoration: none;
-            font-family: "Montserrat";
-            font-size: 15px;
-            text-align: center; }
-        body header nav .menu ul .lineasMenu {
-          background-color: white;
-          opacity: 50%;
-          width: 10%;
-          margin-left: 45%;
-          top: -8px; }
-    body header nav button {
-      display: none; }
-  body main img {
-    margin-left: 47%;
+main {
+  text-align: center; }
+  main img {
     margin-bottom: 7px; }
-  body main h2 {
+  main h2 {
     color: #572EE5;
     font-family: "Montserrat";
     text-align: center;
     font-size: 20px;
     line-height: 30px; }
 
-@media screen and (min-width: 1080px) {
-  body .inicio {
-    width: 100%; }
-  body header figure {
-    margin-left: 14%; }
-    body header figure img {
-      height: 59.1px; }
-  body header nav {
-    width: 100%;
-    margin-left: 30%;
-    display: inline-flex; }
-    body header nav .menu {
-      margin-right: 0; }
-      body header nav .menu span {
-        display: none; }
-      body header nav .menu input {
-        display: none; }
-      body header nav .menu ul {
-        display: flex;
-        position: unset;
-        background: none;
-        width: 400px; }
-        body header nav .menu ul li {
-          margin: 0;
-          width: 130px; }
-          body header nav .menu ul li a {
-            font-family: 'Montserrat';
-            font-weight: bold;
-            font-size: 13px;
-            color: #572EE5;
-            letter-spacing: 0;
-            text-align: center; }
-    body header nav button {
-      display: inline-block;
-      background-color: white;
-      margin-right: 175px;
-      border: #572EE5 solid 1px;
-      border-radius: 50%;
-      padding: 2%; } }
+.vermas {
+  text-align: center; }
+  .vermas button {
+    background-color: white;
+    border: #572EE5 1px solid;
+    padding: 3%;
+    border-radius: 30%;
+    color: #572EE5;
+    font-family: "Montserrat";
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: bold; }
 
 /*# sourceMappingURL=favoritos.css.map */

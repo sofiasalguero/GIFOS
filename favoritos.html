@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoritos</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/favoritos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 </html>
 <body>
     <section class="inicio">
 
     </section>
-            <header>
+        <header>
                 <figure class="logo">
                     <img src="../images/logo-mobile.svg" alt="logo">
                 </figure>
@@ -41,24 +43,24 @@
                         <img src="./images/button-crear-gifo.svg" alt="crear-gifo">
                     </button>
                 </nav>
-            </header>
-        <main>
-            <img src="./images/icon-favoritos.svg" alt="Favoritos">
-            <h2>Favoritos</h2>
-        </main>
+        </header>
+            <main>
+                <img src="./images/icon-favoritos.svg" alt="Favoritos">
+                <h2>Favoritos</h2>
+       
 
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
+                     <div>
+                         <img src="" alt="">
+                         <img src="" alt="">
+                         <img src="" alt="">
+                         <img src="" alt="">
+                     </div>
 
-        <section>
-            <button>
-                ver mas 
-            </button>
-        </section>
+                <section class="vermas">
+                    <button>
+                        ver más 
+                    </button>
+                </section>
 
         <section class="trending">
 
@@ -71,14 +73,59 @@
             <figure>
                 <ul>
                     <li>
-                        <img src="" alt="">
+                            <button class="left" id="load-less-btn" onclick="loadTrendingGiphys(-1)">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </button>
+                    
                     </li>
+                    <li id="trending-list"></li>
                     <li>
-                        <img src="" alt="">
+                        
+                            <button class="right" id="load-more-btn" onclick="loadTrendingGiphys(1)">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </button>
+                    
                     </li>
+                
                 </ul>
+                
             </figure>
         </section>
+    </main>
+
+    <footer>
+        <section class="compartir">
+            <p>Compartir en:</p>
+            <div>
+                
+                    <a href="https://es-la.facebook.com/" target="_blank" >
+                    <i class="fab fa-facebook"></i>
+                    </a>
+               
+                    <a href="https://twitter.com/explore" target="_blank" class="icono-medio">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+               
+              
+                    <a href="https://www.instagram.com/" target="_blank" >
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+              
+            </div>
+
+            <p class="derechos">
+                © GIFOS 2020 All Rights Reserved.
+            </p>
+
+        </section>
+
+
+    </footer>
+
+    <script src="utils.js"></script>
+    <script src="giphy.js"></script>
+    <script src="trending-giphy.js"></script>
+
 
     
 </body>
