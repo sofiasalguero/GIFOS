@@ -5,6 +5,7 @@
             width: 100%;
         }
         header{
+            
 
             figure{
                 margin-left:14%;
@@ -38,7 +39,7 @@
                             li{
                                 margin: 0;
                                 width: 130px; 
-                               
+
                                 
                             
                                 
@@ -51,6 +52,9 @@
                                     text-align: center;  
                                     
                                 }  
+                            }
+                            .li{
+                                display: none;
                             }
                         }        
                     }
@@ -69,10 +73,11 @@
             section{
 
                 h1{
-                    width: 600px;
+                   
                     font-size: 35px;
-                    margin-left: 25%;
                     margin-top: 76px;
+                    padding-left: 22%;
+                    padding-right: 22%;
                 }
             }
 
@@ -82,7 +87,6 @@
 
                     img{
                         width: 24rem;
-                        margin-left: 34%
                     }
                 }
             }
@@ -90,11 +94,11 @@
             section{
                 input{
                     width: 35rem;
-                    margin-left: 27%;
+                    margin-left: 2%;
                 }
 
                 .buscador{
-                    margin-left: 51em;
+                    margin-left: 34em;
                 }
             }
 
@@ -106,9 +110,8 @@
                 }
 
                 p{
-                    font-size: 16px;
-                    width: 402px;  
-                    margin-left: 32vw;
+                    font-size: 16px; 
+                    
                 }
             }
 

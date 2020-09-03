@@ -30,7 +30,7 @@ body {
         }
 
         nav {
-            
+
             .menu {
                 padding-top: 3px;
 
@@ -60,7 +60,7 @@ body {
                     &:checked ~ span:nth-last-child(2) {
                         transform: rotate(-45deg) translate(1px, 0px);
                     }
-                    
+
                 }
 
                 span {
@@ -94,7 +94,7 @@ body {
                     display: none;
                     min-height: 100%;
                     z-index: 1;
-                   
+
                     li {
                         display: block;
                         width: 100%;
@@ -132,6 +132,7 @@ body {
     main{
 
         section{
+            text-align: center;
 
             h1{
                 font-family:$fuente-primaria;
@@ -139,8 +140,9 @@ body {
                 color: $color-principal;
                 text-align: center;
                 line-height: 33px;
-                width:286px;
-                margin-left:45px;
+                padding-left: 10%;
+                padding-right: 10%;;
+                
 
                 .gifos{
                     color:$color-secundario ;
@@ -148,15 +150,14 @@ body {
                 }
             }
         }
-        
+
         section{
 
             figure{
-                
+
                 img{
-                   margin-top: 31px; 
+                   margin-top: 31px;
                    width: 17rem;
-                   margin-left:3rem;
                 }
             }
         }
@@ -169,23 +170,23 @@ body {
             border: 1px solid $color-principal;
             border-radius: 27px;
             border-radius: 27px;
-            margin-left: 16px;
             position: absolute
             }
-            
+
             ::-webkit-input-placeholder {
                 padding-left:55px;
             }
 
            .buscador{
                position: relative;
-               margin-left: 314px;
+               margin-left: 300px;
                margin-top:15px;
-           } 
+           }
         }
 
 
         .reactions{
+            
 
             h2{
                 font-family:$fuente-primaria;
@@ -201,10 +202,9 @@ body {
                 font-size: 14px;
                 color: $color-principal;
                 text-align: center;
-                line-height: 25px; 
-                width: 50%;
-                margin-left: 25vw;
-                margin-top: 2px;
+                line-height: 25px;
+                padding-right:20%;
+                padding-left:20%;
             }
         }
 
@@ -214,12 +214,12 @@ body {
             h1{
                 text-transform: uppercase;
             }
-                
+
                 ul{
-                list-style-type: none; 
+                list-style-type: none;
                 display: flex;
                 flex-wrap: wrap;
-                
+
 
                 li{
                     padding: 4%;
@@ -237,7 +237,7 @@ body {
                 font-size: 20px;
                 color:$color-principal;
                 text-align: center;
-                line-height: 30px; 
+                line-height: 30px;
                 padding-top: 46px;
             }
 
@@ -246,18 +246,18 @@ body {
                 font-size: 16px;
                 color: $color-fuentes;
                 text-align: center;
-                line-height: 23px;  
+                line-height: 23px;
                 margin-top: 7px;
                 margin-bottom:32px;
-                
+
             }
             figure{
 
                 ul{
                 list-style-type: none;
                 display: flex;
-                   
-               
+
+
                 li{
                     display: flex;
                     height: 35vh;
@@ -266,20 +266,20 @@ body {
                             margin-left: 2px;
                             color: $color-principal;
                             background-color:$background-secundario;
-                            
+
                         }
                     .right{
                             color: $color-principal;
                             background-color:$background-secundario;
                         }
-                    
+
 
                         img{
                             height: 30vh;
                             width: 70vw;
                             padding: 1vh;
                             margin-bottom: 82px;
-                            
+
                         }
                     }
                 }
@@ -289,12 +289,12 @@ body {
                 }
             }
 
-            
+
         }
-        
-        
+
+
     }
-    
+
     footer{
 
         .compartir{
@@ -303,11 +303,11 @@ body {
                 font-family:$fuente-secundaria;
                 font-size: 15px;
                 color: $color-fuentes;
-                letter-spacing: 0; 
+                letter-spacing: 0;
                 margin-top: 47px;
                 margin-bottom: 24px;
                 text-align: center;
-                
+
             }
 
             div{
@@ -317,7 +317,7 @@ body {
                 i{
                     color: $color-iconos;
                 }
-                
+
                 .icono-medio{
                     margin-right: 19px;
                     margin-left: 19px;
@@ -335,7 +335,7 @@ body {
         text-align: center;
         margin-bottom: 23px;
         }
-    
+
     }
 
 }
