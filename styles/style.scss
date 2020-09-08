@@ -263,12 +263,12 @@ body {
                     height: 35vh;
 
                     .left{
-                            margin-left: 2px;
+                            margin-left: 20px;
                             color: $color-principal;
                             background-color:$background-secundario;
-
                         }
                     .right{
+                            margin-right: 20px;
                             color: $color-principal;
                             background-color:$background-secundario;
                         }
@@ -278,7 +278,7 @@ body {
                             height: 30vh;
                             width: 70vw;
                             padding: 1vh;
-                            margin-bottom: 82px;
+                            margin-left: 10%;
 
                         }
                     }
