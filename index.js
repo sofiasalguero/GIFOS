@@ -1,6 +1,7 @@
 let darkMode= false;
 const btnSwitch = document.getElementById('switch');
-const classList = document.body.classList;
+const bodyClassList = document.body.classList;
+const navbarClassList = document.getElementById('navbar').classList;
 
 const newGiphyItem = (gif) => {
     const li = document.createElement('li');
@@ -26,10 +27,12 @@ btnSwitch.addEventListener('click', () => {
     
     if (darkMode) {
         setHtml(btnSwitch, 'Modo Diurno');
-        classList.add('dark');
+        bodyClassList.add('dark');
+        navbarClassList.add('dark');
     }
     else {
         setHtml(btnSwitch, 'Modo Nocturno');
-        classList.remove('dark');
+        bodyClassList.remove('dark');
+        navbarClassList.remove('dark');
     }
 });

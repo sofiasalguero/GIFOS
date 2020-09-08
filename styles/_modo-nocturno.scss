@@ -1,0 +1,99 @@
+@import "_style";
+
+*{
+    &.dark{
+        background-color:$background-dark;
+
+        .inicio{
+            background-color: $background-darkMenu;
+        }
+        header{
+            background-color:$background-dark;
+            color: $fuente-principal; 
+        
+            nav{
+            background-color:$background-dark;
+            color: $fuente-principal; 
+
+                .menu{
+                color:$fuente-principal;
+
+                span{
+                    background-color: $fuente-principal;
+                }
+                ul{
+                    background-color:$background-darkMenu;
+                    a{
+                        color: $fuente-principal;
+                    }
+                }
+
+                }
+               
+            }
+        }
+        main{
+
+            section{
+
+                h1{
+                    color:$fuente-principal;
+                }
+            }
+
+            section{
+                input{
+                    background-color: $background-dark;
+                    border: 1px solid $fuente-principal;
+                }
+            }
+
+            .reactions{
+
+                h2{
+                    color: $fuente-principal;
+                }
+                p{
+                    color: $fuente-principal;
+                }
+            }
+        
+
+            .trending{
+                    background-color:$backgroundSecundario-dark;
+
+                    h2{
+                        color: $fuente-principal;
+                    }
+                    p{
+                        color: $fuente-principal;
+                    }
+                
+                    .left{
+                        background-color: $backgroundSecundario-dark;
+                        color:$fuente-principal;
+                        border: 1px solid $fuente-principal;
+                    }
+
+                    .right{
+                        background-color: $backgroundSecundario-dark;
+                        color:$fuente-principal;
+                        border: 1px solid $fuente-principal;
+                    }
+                }
+        }
+
+        footer{
+            .compartir{
+                p{
+                    color: $fuente-principal;
+                }
+            }
+            p{
+                color: $fuente-principal;
+            }
+        }
+   }
+}
+
+

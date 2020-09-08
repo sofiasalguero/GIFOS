@@ -17,8 +17,6 @@
 
 body {
   margin-top: 0; }
-  body.dark {
-    background-color: #37383C; }
   body header {
     display: flex;
     justify-content: space-between;
@@ -240,7 +238,7 @@ body {
       height: 59.1px; }
   body header nav {
     width: 100%;
-    margin-left: 30%;
+    margin-left: 35%;
     display: inline-flex; }
     body header nav .menu {
       margin-right: 0; }
@@ -253,6 +251,8 @@ body {
         position: unset;
         background: none;
         width: 400px; }
+        body header nav .menu ul.dark {
+          background-color: #37383C; }
         body header nav .menu ul li {
           margin: 0;
           width: 130px; }
@@ -313,5 +313,55 @@ body {
       float: right;
       margin-right: 158px;
       font-size: 13px; } }
+/*Estilo ligth version*/
+/*Background*/
+/*Colores*/
+/*Fuentes*/
+/*Dark Mode */
+*.dark {
+  background-color: #37383C; }
+  *.dark .inicio {
+    background-color: #000000; }
+  *.dark header {
+    background-color: #37383C;
+    color: #FFFFFF; }
+    *.dark header nav {
+      background-color: #37383C;
+      color: #FFFFFF; }
+      *.dark header nav .menu {
+        color: #FFFFFF; }
+        *.dark header nav .menu span {
+          background-color: #FFFFFF; }
+        *.dark header nav .menu ul {
+          background-color: #000000; }
+          *.dark header nav .menu ul a {
+            color: #FFFFFF; }
+  *.dark main section h1 {
+    color: #FFFFFF; }
+  *.dark main section input {
+    background-color: #37383C;
+    border: 1px solid #FFFFFF; }
+  *.dark main .reactions h2 {
+    color: #FFFFFF; }
+  *.dark main .reactions p {
+    color: #FFFFFF; }
+  *.dark main .trending {
+    background-color: #222326; }
+    *.dark main .trending h2 {
+      color: #FFFFFF; }
+    *.dark main .trending p {
+      color: #FFFFFF; }
+    *.dark main .trending .left {
+      background-color: #222326;
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF; }
+    *.dark main .trending .right {
+      background-color: #222326;
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF; }
+  *.dark footer .compartir p {
+    color: #FFFFFF; }
+  *.dark footer p {
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */

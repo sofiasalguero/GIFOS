@@ -14,9 +14,6 @@
 }
 body {
     margin-top: 0;
-    &.dark{
-        background-color: $background-dark;
-    };
 
     header {
         display: flex;
@@ -94,6 +91,7 @@ body {
                     display: none;
                     min-height: 100%;
                     z-index: 1;
+
 
                     li {
                         display: block;
@@ -359,3 +357,5 @@ body {
 }
 
 @import"mediaqueries-1080";
+@import"modo-nocturno";
+
