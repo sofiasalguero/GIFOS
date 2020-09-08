@@ -19,8 +19,9 @@ main {
   .vermas button {
     background-color: white;
     border: #572EE5 1px solid;
-    padding: 3%;
-    border-radius: 30%;
+    padding: 2vh;
+    border-radius: 25px;
+    border-radius: 25px;
     color: #572EE5;
     font-family: "Montserrat";
     font-size: 13px;
