@@ -93,14 +93,13 @@
                 Mira los últimos <br> GIFOS de nuestra comunidad.
             </p>
             <figure>
-                <ul>
+                <ul id="trending-list">
                     <li>
                             <button class="left" id="load-less-btn" onclick="loadTrendingGiphys(-1)">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                             </button>
                     
                     </li>
-                    <li id="trending-list"></li>
                     <li>
                         
                             <button class="right" id="load-more-btn" onclick="loadTrendingGiphys(1)">
@@ -148,9 +147,12 @@
 
     </section>
 
+   
     <script src="utils.js"></script>
     <script src="giphy.js"></script>
     <script src="trending-giphy.js"></script>
+    <script src="index.js"></script>
+    <script src="favoritos.js"></script>
 
 
     

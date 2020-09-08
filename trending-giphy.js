@@ -1,5 +1,6 @@
-const loadLessBtn = document.getElementById('load-less-btn');
 const trendingList = document.getElementById('trending-list');
+const goBack = trendingList.getElementsByTagName('li')[0].cloneNode(true);
+const goForward = trendingList.getElementsByTagName('li')[1].cloneNode(true);
 const pageSize = getPageSize();
 let offset = 0;
 let canGoBack = false;
@@ -13,19 +14,27 @@ function loadTrendingGiphys(multiplier) {
         return;
     }
 
-    var trendingHtml = '';
     offset = offset + (pageSize * multiplier);
 
-    trendingGiphys((gifs) => {
+    removeAllChildNodesFrom(trendingList);
+
+    trendingGiphys(pageSize, offset).then((gifs) => {
+        trendingList.appendChild(goBack);
+
+        const gifsList = document.createElement('li');
+        gifsList.style.width = '100%';
+        
         gifs.forEach(gif => {
-            const img = gif.images.original;
-            trendingHtml += '<li><img src='+ img.url +' width='+ img.width +' height='+ img.height +' alt="'+ gif.title +'"></li>';
-        })
-        setHtml(trendingList, trendingHtml);
-    }, pageSize, offset);
+            const li = newGiphyItem(gif);
+            gifsList.appendChild(li);
+        });
+
+        trendingList.appendChild(gifsList);
+        trendingList.appendChild(goForward);
+    });
 
     canGoBack = offset >= pageSize;
-    loadLessBtn.disabled = !canGoBack;
+    goBack.getElementsByTagName('button')[0].disabled = !canGoBack;
 }
 
 function getPageSize() {

@@ -1,35 +1,40 @@
 const giphyApiKey = '5qEElJm42RMtEkdtUZZnByVqt44ITw8r';
 const giphyApiUrl = 'https://api.giphy.com/v1/gifs/';
 
-function getUsers() {
-    getData('https://randomuser.me/api/', (data) => {
-        console.log(data);
-    });
+async function getGiphyById(id) {
+    const url = giphyApiUrl + id + '?api_key=' + giphyApiKey;
+    const res = await getData(url);
+    return res.data;
 }
 
-function searchGiphys(text, action, limit = 20) {
+async function getGiphysByIds(ids) {
+    const q = ids.join();
+    const url = giphyApiUrl + '?api_key=' + giphyApiKey + '&ids=' + q;
+    const res = await getData(url);
+    return res.data;
+}
+
+async function searchGiphys(text, limit = 20) {
     const url = giphyApiUrl + 'search' + '?api_key=' + giphyApiKey + '&q=' + text + '&limit=' + limit;
-    getData(url, (response) => {
-        action(response.data);
-    });
+    const res = await getData(url);
+    return res.data;
 }
 
-function trendingGiphys(action, limit = 20, offset = 0) {
+async function trendingGiphys(limit = 20, offset = 0) {
     const url = giphyApiUrl + 'trending' + '?api_key=' + giphyApiKey + '&limit=' + limit + '&offset=' + offset;
-    getData(url, (response) => {
-        action(response.data);
-    });
+    const res = await getData(url);
+    return res.data;
 }
 
-function getData(url, action) {
-    $.ajax({
-        url: url,
-        dataType: 'json',
-        success: function(data) {
-            action(data);
-        },
-        error: function() {
-            console.error("Error al requerir información a " + url);
-        }
-      });
+async function getData(url) {
+    try 
+    {
+        const res = await fetch(url);
+        return await res.json();
+    }
+    catch (error) 
+    {
+        console.error("Error al requerir información a " + url);
+        return error;
+    }
 }
