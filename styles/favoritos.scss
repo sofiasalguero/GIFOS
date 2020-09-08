@@ -15,6 +15,21 @@
             font-size: 20px;
             line-height: 30px;
         }
+
+        .img-sincontenido{
+            margin-top: 10vh;
+            height: 115px;
+        }
+
+        .sin-contenido{
+            font-family: $fuente-primaria;
+            font-size: 22px;
+            color: $color-secundario;
+            text-align: center;
+            line-height: 33px;
+            padding-right: 30%;
+            padding-left: 30%;
+        }
     }
 
     .vermas{
