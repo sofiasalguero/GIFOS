@@ -266,11 +266,29 @@ body {
                             margin-left: 20px;
                             color: $color-principal;
                             background-color:$background-secundario;
+                            padding: 8px;
+                            height: 30px;
+                            margin-top:300%;
+                            border: solid 1px $color-principal;
+
+                            &:hover{
+                                background-color: $color-principal;
+                                color:$color-fuentes2;
+                            }
                         }
                     .right{
                             margin-right: 20px;
                             color: $color-principal;
                             background-color:$background-secundario;
+                            padding: 8px;
+                            height: 30px;
+                            margin-top:300%;
+                            border: solid 1px $color-principal;
+
+                            &:hover{
+                                background-color: $color-principal;
+                                color:$color-fuentes2;
+                            }
                         }
 
 
@@ -278,8 +296,7 @@ body {
                             height: 30vh;
                             width: 70vw;
                             padding: 1vh;
-                            margin-left: 10%;
-
+                            margin-left: 4%;
                         }
                     }
                 }

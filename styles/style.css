@@ -178,16 +178,30 @@ body {
         body main .trending figure ul li .left {
           margin-left: 20px;
           color: #572EE5;
-          background-color: #F3F5F8; }
+          background-color: #F3F5F8;
+          padding: 8px;
+          height: 30px;
+          margin-top: 300%;
+          border: solid 1px #572EE5; }
+          body main .trending figure ul li .left:hover {
+            background-color: #572EE5;
+            color: white; }
         body main .trending figure ul li .right {
           margin-right: 20px;
           color: #572EE5;
-          background-color: #F3F5F8; }
+          background-color: #F3F5F8;
+          padding: 8px;
+          height: 30px;
+          margin-top: 300%;
+          border: solid 1px #572EE5; }
+          body main .trending figure ul li .right:hover {
+            background-color: #572EE5;
+            color: white; }
         body main .trending figure ul li img {
           height: 30vh;
           width: 70vw;
           padding: 1vh;
-          margin-left: 10%; }
+          margin-left: 4%; }
     body main .trending figure #trending-list {
       width: 100%; }
   body footer .compartir p {
