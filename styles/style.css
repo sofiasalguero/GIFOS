@@ -201,6 +201,22 @@ body {
           width: 70vw;
           padding: 1vh;
           margin-left: 4%; }
+      body main .trending figure ul .botones .img-guia {
+        position: relative; }
+      body main .trending figure ul .botones div {
+        display: flex;
+        flex-wrap: column;
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 2%; }
+        body main .trending figure ul .botones div button {
+          background-color: inherit;
+          padding: 3%; }
+          body main .trending figure ul .botones div button img {
+            height: 4vh;
+            width: 8vw;
+            background-color: #F3F5F8;
+            border-radius: 10%; }
     body main .trending figure #trending-list {
       width: 100%; }
   body footer .compartir p {
@@ -296,6 +312,21 @@ body {
       height: 25vh;
       width: 25vw;
       margin-left: 40%; }
+    body main .trending figure ul .botones .img-guia {
+      position: relative; }
+    body main .trending figure ul .botones div {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      margin-left: 17%;
+      margin-top: 1,5%; }
+      body main .trending figure ul .botones div button {
+        background-color: inherit;
+        padding: 2%; }
+        body main .trending figure ul .botones div button img {
+          height: 6vh;
+          width: 4vw;
+          border-radius: 10%; }
     body main .trending figure ul #trending-list {
       width: 100%; }
   body footer .compartir {

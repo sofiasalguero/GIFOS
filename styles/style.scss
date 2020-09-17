@@ -297,7 +297,41 @@ body {
                             padding: 1vh;
                             margin-left: 4%;
                         }
+
                     }
+
+                        
+                        .botones{
+
+                            .img-guia{
+                                position: relative;
+                            }
+
+                           div{
+                               display: flex;
+                               flex-wrap: column;
+                               position: absolute;
+                               margin-left: 40%;
+                               margin-top: 2%;
+
+
+                                button{
+                                    background-color: inherit;
+                                    padding: 3%;
+                                    
+
+                                 img{
+                                    height: 4vh;
+                                    width: 8vw;
+                                    background-color: #F3F5F8;
+                                    border-radius: 10%;
+                                    
+                                    }
+                                }    
+                            }
+                        }
+                           
+                    
                 }
 
                 #trending-list{

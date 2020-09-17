@@ -132,6 +132,39 @@
                             margin-left: 40%;
                         }
                     }
+
+                      
+                    .botones{
+
+                        .img-guia{
+                            position: relative;
+                        }
+
+                       div{
+                           display: flex;
+                           flex-wrap: wrap;
+                           position: absolute;
+                           margin-left: 17%;
+                           margin-top: 1,5%;
+
+
+                            button{
+                                background-color: inherit;
+                                padding: 2%;
+                                
+
+                             img{
+                                height: 6vh;
+                                width: 4vw;
+                                border-radius: 10%;
+                                
+                                }
+                            }    
+                        }
+                    }
+                       
+                
+            
                     #trending-list{
                         width: 100%;
                     }
