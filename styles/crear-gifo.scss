@@ -1,0 +1,99 @@
+@import "_style";
+
+main{
+    display: flex;
+    text-align: center;
+    .proyector{
+        width: 20%;
+        margin-left: 14%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+        img{
+            height: 14vh;
+        }
+        
+        .luzcamara{
+            height: 10vh;
+            margin-bottom: 7%;
+        }
+    }
+
+    .crear{
+        border: 1px $color-principal solid;
+        width:50%;
+
+        h2{
+            font-family:$fuente-primaria;
+            color: $color-principal;
+            font-size: 25px;
+            line-height: 35px;
+            padding-top: 20%;
+
+            .gifos{
+                color: $color-secundario;
+            }
+        }
+       
+
+        p{
+            font-family: $fuente-secundaria;
+            font-size: 16px;
+            line-height: 29px;
+            padding-top: 2%;
+        }
+    }
+}
+
+.paginas{
+    display: flex;
+    margin-left: 50%;
+
+    div{
+        text-align: center;
+        border: solid 1px $color-principal;
+        width: 6%;
+        height: 4%;
+        border-radius: 50%;
+        margin-top: 3%;
+        margin-left: 3%;
+        padding: 1%;
+
+        p{
+            font-family: $fuente-secundaria;
+            font-size: 18px; 
+            color: $color-principal;
+            font-weight: bold;
+            
+            
+        }
+    }    
+
+    .pelicula{
+        margin-left: 48%;
+        width: 10vw;
+    }
+}
+
+.linea{
+    background-color: $color-principal;
+    height: 6px;
+    width: 60%;
+    margin-left: 28%;
+    
+}
+
+button{
+    font-family: $fuente-primaria;
+    color: $color-principal;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid $color-principal;
+    background-color: inherit;
+    padding: 1%;
+    border-radius: 25px;
+    margin-left: 53%;
+    margin-top: 2%;
+}

@@ -1,0 +1,81 @@
+/*Estilo ligth version*/
+/*Background*/
+/*Colores*/
+/*Fuentes*/
+/*Dark Mode */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  main .proyector {
+    width: 20%;
+    margin-left: 14%;
+    padding-top: 10%;
+    padding-bottom: 10%; }
+    main .proyector img {
+      height: 14vh; }
+    main .proyector .luzcamara {
+      height: 10vh;
+      margin-bottom: 7%; }
+  main .crear {
+    border: 1px #572EE5 solid;
+    width: 50%; }
+    main .crear h2 {
+      font-family: "Montserrat";
+      color: #572EE5;
+      font-size: 25px;
+      line-height: 35px;
+      padding-top: 20%; }
+      main .crear h2 .gifos {
+        color: #50E3C2; }
+    main .crear p {
+      font-family: "Roboto";
+      font-size: 16px;
+      line-height: 29px;
+      padding-top: 2%; }
+
+.paginas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50%; }
+  .paginas div {
+    text-align: center;
+    border: solid 1px #572EE5;
+    width: 6%;
+    height: 4%;
+    border-radius: 50%;
+    margin-top: 3%;
+    margin-left: 3%;
+    padding: 1%; }
+    .paginas div p {
+      font-family: "Roboto";
+      font-size: 18px;
+      color: #572EE5;
+      font-weight: bold; }
+  .paginas .pelicula {
+    margin-left: 48%;
+    width: 10vw; }
+
+.linea {
+  background-color: #572EE5;
+  height: 6px;
+  width: 60%;
+  margin-left: 28%; }
+
+button {
+  font-family: "Montserrat";
+  color: #572EE5;
+  font-size: 13px;
+  letter-spacing: 0;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #572EE5;
+  background-color: inherit;
+  padding: 1%;
+  border-radius: 25px;
+  margin-left: 53%;
+  margin-top: 2%; }
+
+/*# sourceMappingURL=crear-gifo.css.map */
