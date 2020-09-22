@@ -10,3 +10,13 @@ function removeAllChildNodesFrom(htmlElement) {
         }
     }
 }
+
+function download(url, name) {
+    var a = document.createElement('a');
+    a.setAttribute('href', url);
+    a.setAttribute('download', name);
+    a.setAttribute('target', '_blank');
+
+    a.click();
+    a.remove();
+} 

@@ -96,14 +96,14 @@
             <figure>
                 <ul id="trending-list">
                     <li>
-                            <button class="left" id="load-less-btn" onclick="loadTrendingGiphys(-1)">
+                            <button class="left" id="load-less-btn">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                             </button>
                     
                     </li>
                     <li>
                         
-                            <button class="right" id="load-more-btn" onclick="loadTrendingGiphys(1)">
+                            <button class="right" id="load-more-btn">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </button>
                     
@@ -148,11 +148,23 @@
 
     </section>
 
+    <div id="append-buttons">
+        <button class="btn-fav">
+            <img src="./images/icon-fav-hover.svg" alt="favorito">
+        </button>
+        <button class="btn-download">
+            <img src="./images/icon-download.svg" alt="download">
+        </button>
+        <button class="btn-max">
+            <img src="./images/icon-max.svg" alt="maximizador">
+        </button>
+    </div>
+
    
     <script src="js/utils.js"></script>
     <script src="js/giphy.js"></script>
-    <script src="js/trending-giphy.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/trending-giphy.js"></script>
     <script src="js/favoritos.js"></script>
 
     
