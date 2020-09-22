@@ -1,5 +1,18 @@
 const favKey = 'gifos-fav';
 const idsFavoritos = getFavoritosFromLocalStorage();
+const favList = document.getElementById('favs-list');
+
+loadCurrentSavedFavs();
+
+function loadCurrentSavedFavs() {
+    if (idsFavoritos.length == 0) {
+        return;
+    }
+
+    getGiphysByIds(idsFavoritos, this.offset).then((gifs) => {
+        console.log(gifs);
+    });
+}
 
 function getFavoritosFromLocalStorage() {
     const favs = localStorage.getItem(favKey);

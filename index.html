@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIFOS</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
@@ -165,7 +166,18 @@
         </button>
     </div>
 
+    <div id="modal-max-gifo" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="gifo-modal">
+          </div>
+          <h5 class="gif-title"></h5>
+          <div id="botones-modal"></div>
+        </div>
+    </div>
+
     <script src="js/utils.js"></script>
+    <script src="js/dark-mode.js"></script>
     <script src="js/giphy.js"></script>
     <script src="js/search-giphy.js"></script>
     <script src="js/index.js"></script>
